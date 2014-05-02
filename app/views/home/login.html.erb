@@ -1,0 +1,8 @@
+<div class="border-form-div">
+  <h2>Sign in</h2>
+  <%= form_for :user do |f| %>
+    <%= f.email_field :email, :autofocus => true %>
+    <%= f.password_field :password %>
+    <%= f.submit "Sign in" %>
+  <% end %>
+</div>
