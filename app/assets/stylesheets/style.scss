@@ -19,7 +19,14 @@ background: linear-gradient(to right, #0D53B4 0%, #3575B9 100%);
     border-top:1px solid #4882C6;
     padding:2%;
 }
+.leftblueborder li a{
+    color:white !important;
+}
+.toplborder{
+    border-top:1px solid #C3CCD7;
+}
 .bluebg{
+    color:#ffffff !important;
     background: #3575B9;
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0D53B4), color-stop(100%, #3575B9));
     background: -webkit-linear-gradient(left, #0D53B4 0%, #3575B9 100%);
@@ -29,3 +36,39 @@ background: linear-gradient(to right, #0D53B4 0%, #3575B9 100%);
     background: -o-linear-gradient(left, #0D53B4 0%, #3575B9 100%);
     background: linear-gradient(to right, #0D53B4 0%, #3575B9 100%);
        }
+.bluegb li{
+    color:white !important;
+}
+.bluehover{
+    li{
+        color: #ffffff !important;
+        border-right: 1px solid #0D53B4 !important;
+    }
+    li a:focus,
+    li a:hover {
+            color: #ffffff !important; 
+            text-decoration: none;
+            background-color: #0D53B4 !important; 
+    }
+    li .active{
+            background-color: none !important; 
+        }
+}
+html,body {
+    height:100%;
+    margin:0;
+    font:normal 12px/2 'Roboto Slab','Segoe UI','Gill Sans','Gill Sans MT',GillSans,'Trebuchet MS',Arial,sans-serif;
+}
+.iconsspace{
+    ul{
+        border-right:1px solid #C3CCD7;
+    }
+    ul li{
+        border-left: 1px solid #C3CCD7 !important;
+    }
+    ul li span{
+        padding:0px 10px 0 10px;
+    }}
+.boxtopshadow{
+    box-shadow:inset 0px 4px 9px rgba(0,0,0,.6);    
+}
