@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+#user authentication
 gem 'devise'
 #layouts
 gem 'rails_layout'
@@ -41,4 +42,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Content Management System 
+gem 'comfortable_mexican_sofa', '~> 1.11.0'
 
