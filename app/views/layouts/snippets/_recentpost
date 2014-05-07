@@ -1,0 +1,40 @@
+<div class="col-md-12" style="margin-top:4%;FONT-FAMILY: Meera;padding:0px;border:1px solid #62acf8;border-radius:5px">
+   <table style="FONT-FAMILY: Meera;width:100%;padding:1px">
+    <tbody>
+      <tr  style="background:-moz-linear-gradient(center top , #8ad8fd, #62acf8);background:-webkit-gradient(linear, left top, left bottom, from(#8ad8fd), to(#62acf8));">
+        <td style="padding:2%;font-weight:bold;color:white">Recent blog posts
+	    </td>
+      </tr>
+      <tr>
+         <td>
+           ഭാവിമാപിനി
+	    </td>       
+      </tr>
+      <tr>
+        <td>
+          അഭിരുചിനിര്‍ണ്ണയപരമ്പര
+        </td>
+      </tr>
+       <tr>
+         <td>
+           ഭാവിമാപിനി
+	    </td>       
+      </tr>
+      <tr>
+        <td>
+          അഭിരുചിനിര്‍ണ്ണയപരമ്പര
+        </td>
+      </tr>
+       <tr>
+         <td>
+           ഭാവിമാപിനി
+	    </td>       
+      </tr>
+      <tr>
+        <td>
+          അഭിരുചിനിര്‍ണ്ണയപരമ്പര
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

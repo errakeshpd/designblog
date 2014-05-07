@@ -1,0 +1,42 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<nav class="navbar navbar-inverse navbar-fixed-top bluebg">
+  <div class="col-md-12" style="text-align:right;background:#373737; border-bottom:solid 1px #000; top:0; height:25px;">
+    <div class="container user">
+      <ul class="nav navbar-nav navbar-right" >
+        <% if user_signed_in? %>
+          <div class="btn-group">
+        Logged in as <strong><%= current_user.email %></strong>.
+        <button data-toggle="dropdown" class="btn-pos btn btn-default dropdown-toggle"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+        <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+            <li class="divider"></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+          </ul>
+        </div>
+
+      <% else %>
+          <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
+        <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	<img src="arividam.gif" alt="missing"/>
+    </div>
+    <div class="collapse navbar-collapse navborder bluehover txtwhite">
+      <ul class="nav navbar-nav navbar-right txtwhite">
+
+        <%= render 'layouts/menu/navigation_links' %>
+
+      </ul>
+    </div>
+  </div>
+</nav>
