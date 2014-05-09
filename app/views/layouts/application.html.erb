@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Arividam" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "അറിവി‍ടം" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Arividam" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,7 +15,23 @@
     <main role="main">
     <%= render 'layouts/messages' %>
     <div style="height:50px"></div>
-       <%= yield %>
+      <div class="container">
+  <div class="row">
+    <div class="col-md-2">
+     <%= render 'layouts/menu/left_mainmenu' %>
+    </div>
+    <div class="col-md-10">
+        <div class="col-md-9">
+       	  <%= yield %>
+        </div>
+        <div class="col-md-3">
+          <div class="col-md-12">
+        <%= render 'layouts/home_right' %>
+          </div>
+        </div>       
+    </div>
+</div>
+</div>
     </main>
     <footer>
        <%= render 'layouts/homefooter/footer'%>

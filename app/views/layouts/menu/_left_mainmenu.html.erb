@@ -1,4 +1,4 @@
- <div class="panel-group" id="accordion">
+ <div class="panel-group" id="accordion" >
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -67,18 +67,17 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                പ്രവേശന പരീക്ഷകള്‍
+                ബ്ലോഗ് പോസ്റ്റുകള്‍
               </a>
             </h4>
           </div>
           <div id="collapse4" class="panel-collapse collapse">
             <div class="panel-body">
               <ul>
-                <li>പ്രവേശന പരീക്ഷകള്‍ engg</li>
-                <li>പ്രവേശന പരീക്ഷകള്‍ medi</li>
-                <li>പ്രവേശന പരീക്ഷകള്‍ cat</li>
-                <li>പ്രവേശന പരീക്ഷകള്‍ gate</li>
-              </ul>
+<% @bloglistnav.each do |bloglist| %>
+      <%= bloglist.content.html_safe %>
+  <% end %>
+                 </ul>
             </div>
           </div>
         </div>

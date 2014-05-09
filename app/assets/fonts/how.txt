@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Manorama";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/portal/mmcss/MANORAM2.eot?#iefix") format("embedded-opentype"), 
+	url("/portal/mmcss/Manorama.ttf") format("truetype"), 
+	url("/portal/mmcss/Manorama.svg#ManoramaRegular") format("svg");
+}
