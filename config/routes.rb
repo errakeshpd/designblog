@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  root 'home#login'
 
   devise_for :users
-  root 'home#index'
   get 'login' => 'home#login'
 
   comfy_route :cms_admin, :path => '/admin'

@@ -1,37 +1,327 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "അറിവി‍ടം" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Arividam" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <header>
-      <%= render 'layouts/menu/navigation' %>
-    </header>
-    <main role="main">
-    <%= render 'layouts/messages' %>
-    <div style="height:30px"></div>
-      <div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-3">
-     <%= render 'layouts/menu/left_mainmenu' %>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= content_for?(:title) ? yield(:title) : "അറിവി‍ടം" %></title>
+<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Arividam" %>">
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="buttton" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">അറിവിടം</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="" href="#">Login</a></li>
+          <li><a class="" href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
     </div>
-    <div class="col-xs-12 col-sm-7" style="color:black">
-       	  <%= yield %>
+  </nav>
+
+  <section class="brand-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+          <!-- LOGO IMAGE -->
+          <div class="col-xs-6 col-sm-4">
+            <table>
+              <tr><td style="text-align:center;">മലയാളത്തിലെ ആദ്യസമ്പൂര്‍ണ്ണ വിദ്യാഭ്യാസ പോര്‍ട്ടല്‍</td></tr>
+              <tr><td><%= image_tag("logoarivi.png", :alt => "അറിവിടം") %></td></tr>
+              <tr><td style="text-align:center;"> അറിയാനൊരിടം അറിയിക്കാനൊരിടം<br/>വയനാട് വിദ്യാഭ്യാസ സമിതി </td></tr>
+            </table>
+          </div>
+          <!-- /LOGO IMAGE -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs" >
+          df
+        </div>
+      </div>
     </div>
-    <div class="col-xs-12 col-sm-2">
-        <%= render 'layouts/home_right' %>
-    </div>       
+  </section>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex2-collapse">
+        <ul class="nav navbar-nav ">
+          <li class="active"><a href="#">ആദ്യതാള്‍</a></li>
+          <li><a href="#">വയനാടോടിവിജ്ഞാനീയം</a></li>
+          <li><a href="#">സ്ക്കള്‍ വെബ്ബിടങ്ങള്‍</a></li>
+          <li><a href="#">വിജഞാപനങ്ങള്‍</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+</header>
+<main role="main">
+<div class="container">
+  <div class="col-md-3">
+    <div class="panel-group" id="accordion" >
+      <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><div class="panel-heading ">
+            <h4 class="panel-title">
+              കരിയര്‍ അനലിസ്റ്റ്
+            </h4>
+        </div>  </a>
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul class="nav">
+              <li><a href="#">നഴ്സിങ്ങ് </a></li>
+              <li><a href="#">മാനേജ്മെന്റ്</a></li>
+              <li><a href="#">ആക്ച്ചുറിയല്‍ സയന്‍സ്</a></li>
+              <li><a href="#">ഫിസിക്കല്‍ സയന്‍സ്</a></li>
+              <li><a href="#">ട്രാവല്‍ & ടൂറിസം</a></li>
+              <li><a href="#">ഡിസൈന്‍</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              വിജഞാപനങ്ങള്‍
+            </h4>
+          </div>
+        </a>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul class="nav">
+              <li><a href="#"> വിജഞാപനങ്ങള്‍ 1</a></li>
+              <li> <a href="#">വിജഞാപനങ്ങള്‍ 2</a></li>
+              <li><a href="#">വിജഞാപനങ്ങള്‍ 3</a></li>
+              <li><a href="#">വിജഞാപനങ്ങള്‍ 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              ഇന്‍വെസ്റ്റിഗേറ്റര്‍
+            </h4>
+          </div>
+        </a>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul class="nav">
+              <li><a href="#">കോളജുകള്‍</a></li>
+              <li><a href="#">കോഴ്സ്സുകള്‍</a></li>
+              <li><a href="#">ഐ.ടി.ഐകള്‍</a></li>
+              <li><a href="#">പോളിടെക്നിക്കുകള്‍</a></li>
+              <li><a href="#">വിദ്യാഭ്യാസലോണ്‍</a></li>
+              <li><a href="#">വിദേശവിദ്യാഭ്യാസം</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+            <h4 class="panel-title">
+              ബ്ലോഗ് പോസ്റ്റുകള്‍
+            </h4>
+        </div>        </a>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+            <ul class="nav">
+              <% @bloglistnav.each do |bloglist| %>
+                <%= bloglist.content.html_safe %>
+            <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9" style="padding:1%">
+    <%= image_tag("univ.jpg", :alt => "അറിവിടം") %>
+    കേരള സര്‍വകലാശാല: മെയ് 10, 2014
+    ബി.എ പരീക്ഷാകേന്ദ്രങ്ങളില്‍ മാറ്റം
+    കേരള സര്‍വകലാശാല മെയ് 14-ന് തുടങ്ങുന്ന  മൂന്നാം വര്‍ഷ ബി.എ. (ആന്വല്‍ സ്‌കീം), മെയ് 19-ന് തുടങ്ങുന്ന  മൂന്നാം വര്‍ഷ ബി.എ. അഫ്‌സല്‍ ഉല്‍-ഉലമ പരീക്ഷകള്‍ക്ക് തിരുവനന്തപുരം ഗവ.ആര്‍ട്‌സ് കോളേജ് കേന്ദ്രമായി അപേക്ഷിച്ചിട്ടുള്ളവര്‍ പാളയം കാമ്പസിലെ സ്‌കൂള്‍ ഓഫ് ഡിസ്റ്റന്റ് എഡ്യൂക്കേഷനില്‍ നിന്നും ഹാള്‍ടിക്കറ്റ് വാങ്ങി രജി.നം 360001-361355 വരെയുള്ള റഗുലര്‍ വിദ്യാര്‍ത്ഥികള്‍ ഗവ. ആര്‍ട്‌സ് കോളേജിലും രജി.നം 361357- 361662 വരെയുള്ള റഗുലര്‍ വിദ്യാര്‍ത്ഥികളും, 21501-21682 വരെയുള്ള സപ്ലിമെന്ററി വിദ്യാര്‍ത്ഥികളും ഗവ. സംസ്‌കൃത കോളേജിലും പരീക്ഷ എഴുതണം. അഫ്‌സല്‍ ഉല്‍-ഉലമ വിദ്യാര്‍ത്ഥികള്‍ ഗവ. ആര്‍ട്‌സ് കോളേജില്‍ പരീക്ഷ എഴുതണം.
+    മെയ് 14-ന് തുടങ്ങുന്ന മൂന്നാം വര്‍ഷ ബി.എ (ആന്വല്‍ സ്‌കീം) പരീക്ഷയ്ക്ക് തിരുവനന്തപുരം മാര്‍ ഇവാനിയോസ് കോളേജ്, സെന്റ് സേവിയേഴ്‌സ് കോളേജ് എന്നിവിടങ്ങള്‍ പരീക്ഷാകേന്ദ്രമായി ആവശ്യപ്പെട്ടവര്‍  തിരുവനന്തപുരം എം.ജി കോളേജില്‍ നിന്നും ചെങ്ങന്നൂര്‍ ക്രിസ്ത്യന്‍ കോളേജ്, മാവേലിക്കര ബിഷപ് മൂര്‍ കോളേജ് എന്നിവിടങ്ങളില്‍ അപേക്ഷിച്ചിട്ടുള്ളവര്‍ കായംകുളം എം.എസ്.എം കോളേജില്‍ നിന്നും ചേര്‍ത്തല സെന്റ് മൈക്കിള്‍സ് കോളേജ്, ചേര്‍ത്തല എന്‍.എസ്.എസ് കോളേജ് എന്നിവിടങ്ങള്‍ അപേക്ഷിച്ചിട്ടുള്ളവര്‍ ചേര്‍ത്തല എസ്.എന്‍ കോളേജില്‍ നിന്നും പത്തനാപുരം സെന്റ് സ്റ്റീഫന്‍സ് കോളേജ്, അടൂര്‍ സെന്റ് സിറിള്‍സ് കോളേജ് എന്നിവിടങ്ങള്‍ അപേക്ഷിച്ചിട്ടുള്ളവര്‍ കൊട്ടാരക്കര എസ്.ജി. കോളേജില്‍ നിന്നും, ആള്‍ സെയിന്റ്‌സ് കോളേജ് പരീക്ഷാകേന്ദ്രമായി ആവശ്യപ്പെട്ടവര്‍ വിമന്‍സ് കോളേജില്‍ നിന്നും, ആലപ്പുഴ സെന്റ് ജോസഫ് കോളേജ് പരീക്ഷാകേന്ദ്രമായി ആവശ്യപ്പെട്ടവര്‍ ആലപ്പുഴ എസ്.ഡി. കോളേജില്‍ നിന്നും, കൊല്ലം എസ്.എന്‍. കോളേജ് ഫോര്‍ വിമന്‍ പരീക്ഷാകേന്ദ്രമായി ആവശ്യപ്പെട്ടവര്‍ കൊല്ലം എഫ്.എം.എന്‍. കോളേജില്‍ നിന്നും ഹാള്‍ടിക്കറ്റ് വാങ്ങി അവിടെത്തന്നെ പരീക്ഷയെഴുതണം.
   </div>
 </div>
+<div class="container">
+
+  <div id="features-panels" class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs text-center">
+
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+              <h3 class="text-info">
+                Delivery worldwide free
+              </h3>
+              <p>
+              Panel content goes here. Lorem ipsum dolor set amet. Panel content goes here. Lorem ipsum dolor set amet.
+              </p>
+              <p class="text-right">
+              <a class="btn btn-info btn-md" href="#">LEARN MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="panel panel-default">
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs text-center">
+              <i class="fa  fa-users fa-5x text-info"></i>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+              <h3 class="text-info">
+                Trusted by 1000000 users
+              </h3>
+              <p>
+              Panel content goes here. Lorem ipsum dolor set amet. Panel content goes here. Lorem ipsum dolor set amet.
+              </p>
+              <p class="text-right">
+              <a class="btn btn-info btn-md" href="#">LEARN MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="panel panel-default">
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs text-center">
+              <i class="fa fa-clock-o fa-5x text-info"></i>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+              <h3 class="text-info">
+                Saves your time
+              </h3>
+              <p>
+              Panel content goes here. Lorem ipsum dolor set amet. Panel content goes here. Lorem ipsum dolor set amet.
+              </p>
+              <p class="text-right">
+              <a class="btn btn-info btn-md" href="#">LEARN MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="panel panel-default">
+
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 hidden-xs text-center">
+              <i class="fa fa-credit-card fa-5x text-info"></i>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+              <h3 class="text-info">
+                No credit card required
+              </h3>
+              <p>
+              Panel content goes here. Lorem ipsum dolor set amet. Panel content goes here. Lorem ipsum dolor set amet.
+              </p>
+              <p class="text-right">
+              <a class="btn btn-info btn-md" href="#">LEARN MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-    </main>
-    <footer>
-       <%= render 'layouts/homefooter/footer'%>
-    </footer>
-  </body>
+</main>
+<footer>
+  <div class="col-md-12 toplborder" style="padding:0">
+    <div class="container iconsspace">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="rightlborder"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-film"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-12 bluebg boxtopshadow" style="color:white">
+    <div class="container page-footer">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 leftblueborder">
+          <ul type="none">
+            <li><a href="#">ആദ്യതാള്‍</a></li>
+            <li><a href="#">ഞങ്ങള്‍</a></li>
+            <li><a href="#">പതിവുചോദ്യങ്ങള്‍</a></li>
+          </ul>
+        </div><!--/.col-md-3-->
+        <div class="col-md-3 col-sm-6 leftblueborder">
+          <ul type="none">
+            <li><a href="#">കോഴ്സ് ഫൈന്‍ഡര്‍</a></li>
+            <li><a href="#">ഭാവിമാപിനി</a></li>
+            <li><a href="#">ബന്ധപ്പെടാം</a></li>
+          </ul>
+        </div><!--/.col-md-3-->
+        <div class="col-md-3 col-sm-6 leftblueborder">
+          <ul type="none">
+            <li><a href="#">സര്‍വ്വകലാശാലകള്‍</a></li>
+            <li><a href="#">കോളജുകള്‍</a></li>
+            <li><a href="#">കോഴ്സ്സുകള്‍</a></li>
+          </ul>
+        </div><!--/.col-md-3-->
+        <div class="col-md-3 col-sm-6 rightblueborder leftblueborder ">
+          <ul type="none">
+            <li><a href="#">ന്യൂസ് ലെറ്റര്‍</a></li>
+            <li><a href="#">കരിയര്‍ ഇന്‍വെസ്റ്റിഗേറ്റര്‍</a></li>
+            <li><a href="#">കരിയര്‍ അനലിസ്റ്റ്</a></li>
+          </ul>
+        </div><!--/.col-md-3-->
+      </div>
+    </div>
+
+    <div class="col-md-12 bluebg topblueborder">
+      <div class="container">
+        <div class="col-md-6"
+          <p>Copyright &copy; Arividam India. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Privacy policy | Legal Agreement </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>

@@ -1,5 +1,5 @@
 <%# add navigation links to this file %>
-<li class="<%= 'active' if current_page?('/home') %>"><%= link_to "ആദ്യതാള്‍", '/home' %></li>
+<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "ആദ്യതാള്‍", root_path %></li>
 <li class=""><%= link_to "വയനാടോടിവിജ്ഞാനീയം", root_path %></li>
 <li class="<%= 'active' if current_page?('/home') %>"><%= link_to "സ്ക്കള്‍ വെബ്ബിടങ്ങള്‍", '/home/' %></li>
 <li class=""><%= link_to "വിജഞാപനങ്ങള്‍", root_path %></li>
